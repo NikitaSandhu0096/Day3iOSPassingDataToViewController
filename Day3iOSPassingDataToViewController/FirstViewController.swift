@@ -16,6 +16,8 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     
     var countryList = ["India", "Canada", "USA", "UK", "Sri Lanka", "Nepal", "Russia"]
     
+    var codeList = ["IN", "CA", "US", "UK", "SL", "NP", "RU" ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,19 +38,29 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
+        return 2
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return self.countryList.count
+        if component == 0{
+            return self.countryList.count
+        }
+        return codeList.count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return countryList[row]
+        if component == 0{
+            return countryList[row]
+        }
+        return codeList[row]
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        print(countryList[row])
+        if component == 0{
+            print(countryList[row])
+        }else{
+            print(codeList[row])
+        }
     }
 }
 
