@@ -20,6 +20,12 @@ class SecondViewController: UIViewController {
         self.navigationItem.hidesBackButton = true
         self.addCloseButton()
         
+        //self.navigationController?.popToRootViewController(animated: true)
+        
+        //let bvc = self.navigationController?.viewControllers[1]
+        
+        //self.navigationController?.popToViewController(bvc, animated: true)
+        
         if let nm = name{
             self.lblWelcome.text = "Welcome, \(nm)"
             
