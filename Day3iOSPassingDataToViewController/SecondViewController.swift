@@ -17,6 +17,10 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //self.navigationController.hides = true
+        self.navigationController?.hidesBarsOnSwipe = true
+        self.navigationController?.navigationBar.isHidden = true
+        
         self.navigationItem.hidesBackButton = true
         self.addCloseButton()
         
