@@ -10,7 +10,6 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
-    
     @IBOutlet weak var textName: UITextField!
     
     override func viewDidLoad() {
@@ -19,6 +18,13 @@ class FirstViewController: UIViewController {
     }
 
     @IBAction func btnGoNext(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let secondVC = sb.instantiateViewController(identifier: "secondVC") as! SecondViewController
+        
+        if let name = self.textName.text{
+            secondVC.name = name
+            self.navigationController?.pushViewController(secondVC, animated: true)
+        }
     }
     
 }

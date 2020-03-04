@@ -36,7 +36,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="3fT-96-QTM"/>
                     <connections>
-                        <outlet property="btnGoNext" destination="6h4-JN-piq" id="fow-wB-7QO"/>
                         <outlet property="textName" destination="dqC-mL-KBB" id="3iN-GU-tGl"/>
                     </connections>
                 </viewController>
@@ -47,12 +46,12 @@
         <!--Second View Controller-->
         <scene sceneID="C4h-vT-et4">
             <objects>
-                <viewController id="KnT-PC-dEU" customClass="SecondViewController" customModule="Day3iOSPassingDataToViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="secondVC" id="KnT-PC-dEU" customClass="SecondViewController" customModule="Day3iOSPassingDataToViewController" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RfV-NL-bha">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REY-5m-kuW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome, Test Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REY-5m-kuW">
                                 <rect key="frame" x="58" y="236" width="295" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
