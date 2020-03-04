@@ -24,6 +24,7 @@ class FirstViewController: UIViewController {
         if let name = self.textName.text{
             secondVC.name = name
             self.navigationController?.pushViewController(secondVC, animated: true)
+           // self.present(secondVC, animated: true, completion: nil)
         }
     }
     
